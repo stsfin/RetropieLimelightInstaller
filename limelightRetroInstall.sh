@@ -22,6 +22,8 @@ read -p "Press any key to continue after you have given the passcode to the Host
 
 read -p "Please ensure that your gamepad is connected to the PI for keymapping, press any key to continue... `echo $'\n> '`" -n1 -s
 
+clear
+
 lsinput
 
 read -p "Input device event ID-number that corresponds with your gamepad from above for keymapping \n (if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
