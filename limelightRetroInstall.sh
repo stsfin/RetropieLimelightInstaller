@@ -2,7 +2,7 @@
 
 read -p "Press anykey to start Java8 install, input sudo credentials when asked `echo $'\n> '`" -n1 -s
 
-sudo apt-get update && sudo apt-get install oracle-java8-jdk
+sudo apt-get update && sudo apt-get install oracle-java8-jdk && sudo apt-get install input-utils
 
 mkdir /home/pi/limelight
 
@@ -20,9 +20,13 @@ java -jar limelight.jar pair $ip
 
 read -p "Press any key to continue after you have given the passcode to the Host PC... `echo $'\n> '`" -n1 -s
 
-read -p "Please ensure that your gamepad is connected to the first USB-port for key mapping, press any key to continue... `echo $'\n> '`" -n1 -s
+read -p "Please ensure that your gamepad is connected to the PI for keymapping, press any key to continue... `echo $'\n> '`" -n1 -s
 
-java -jar limelight.jar map -input /dev/input/event0 mapfile.map
+lsinput
+
+read -p "Input device event ID-number that corresponds with your gamepad from above for keymapping (if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
+
+java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
 cd /home/pi/RetroPie/roms/ports/
 
