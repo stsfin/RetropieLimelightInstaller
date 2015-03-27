@@ -26,7 +26,7 @@ clear
 
 lsinput
 
-echo "Input device event ID-number that corresponds with your gamepad from above for keymapping\n"
+echo -e "\nInput device event ID-number that corresponds with your gamepad from above for keymapping \n"
 read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
