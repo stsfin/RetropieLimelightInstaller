@@ -9,7 +9,9 @@ limelightReconfig.sh - script is used to reconfigure ip and keymap settings for 
 Howto use:
 
 just drop the limelightRetroInstall.sh in to your home directory
+
 chmod +x limelightRetroInstall.sh
+
 ./limelightRetroInstall.sh
 
 Do todo: 
