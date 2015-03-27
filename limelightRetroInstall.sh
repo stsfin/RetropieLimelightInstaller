@@ -12,7 +12,13 @@ wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/lib
 
 wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/limelight.jar
 
+clear
+
+echo -e "\nDiscovering GeForce PC:s, when found you can press ctrl+c to stop the search, or it will take a long time \n"
+
 java -jar limelight.jar discover
+
+echo -e "\n"
 
 read -p "Input ip-address given above (if no IP is shown, press CTRL+C and check host connection) :`echo $'\n> '`" ip
 
