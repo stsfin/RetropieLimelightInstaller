@@ -8,8 +8,6 @@ mkdir /home/pi/limelight
 
 cd /home/pi/limelight
 
-sudo apt-get update && sudo apt-get install oracle-java8-jdk
-
 wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/libopus.so
 
 wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/limelight.jar
