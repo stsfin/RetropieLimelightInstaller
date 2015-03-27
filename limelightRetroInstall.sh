@@ -24,7 +24,7 @@ read -p "Please ensure that your gamepad is connected to the PI for keymapping, 
 
 lsinput
 
-read -p "Input device event ID-number that corresponds with your gamepad from above for keymapping (if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
+read -p "Input device event ID-number that corresponds with your gamepad from above for keymapping \n (if the gamepad is missing, press CTRL+C and reboot the PI with the game pad attached) :`echo $'\n> '`" USBID
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
