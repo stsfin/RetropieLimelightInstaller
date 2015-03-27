@@ -43,3 +43,7 @@ echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip
 
 echo "#!/bin/bash" >> limelight1080p60fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
+
+chmod +x limelight720p60fps.sh
+chmod +x limelight1080p30fps.sh
+chmod +x limelight1080p60fps.sh
