@@ -4,6 +4,7 @@ Just a quick bash script to automate the install of Limelight to Retropie with E
 
 
 limelightRetroInstall.sh - script is used to install and configure limelight with retropie
+
 limelightReconfig.sh - script is used to reconfigure ip and keymap settings for limelight without installing stuff again, this will be installed in to the ports-folder for easy access from Emulation Station.
 
 Howto use:
