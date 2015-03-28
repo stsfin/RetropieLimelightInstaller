@@ -14,6 +14,8 @@ chmod +x limelightRetroInstall.sh
 
 ./limelightRetroInstall.sh
 
+After the install reboot your RetroPie and start the wanted limelight form Emulations Stations -ports section
+
 <hr>
 
 Known issues: 
@@ -30,3 +32,7 @@ force_turbo=1
 temp_limit=80
 
 DISCLAIMER: Force_turbo will void your warranty since its keeps the clock on 100% without throttling, so you should use a heatsink with these settings. I will not be responsible if your cat catches fire or your pi explodes because of these
+
+<hr>
+
+Special thanks to the Guys from the Possibly Unsafe -youtube channel whose lime light video tutorial sparked the idea to make the install a tad easier. You can follow them here: https://www.youtube.com/channel/UCyvRzvYxTv1Zz0x--GN_Z7w
