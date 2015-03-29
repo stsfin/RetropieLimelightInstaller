@@ -44,9 +44,9 @@ cd /home/pi/RetroPie/roms/ports/
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
-rm limelight720p60fps.sh
-rm limelight1080p30fps.sh
-rm limelight1080p60fps.sh
+rm limelight720p60fps.sh 2> /dev/null
+rm limelight1080p30fps.sh 2> /dev/null
+rm limelight1080p60fps.sh 2> /dev/null
 
 
 echo "#!/bin/bash" >> limelight720p60fps.sh
