@@ -8,8 +8,7 @@ sudo apt-get update && sudo apt-get install oracle-java8-jdk && sudo apt-get ins
 mkdir /home/pi/limelight
 mkdir /home/pi/RetroPie/roms/limelight
 
-# cp limelightReconfig.sh /home/pi/RetroPie/roms/limelight/ 
-# install for limelight reconfig, will be enabled as soon the issues that emulation station causes are found and fixed
+cp limelightReconfig.sh /home/pi/RetroPie/roms/limelight/ 
 
 cd /home/pi/limelight
 
@@ -78,6 +77,6 @@ echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip
 chmod +x limelight720p60fps.sh
 chmod +x limelight1080p30fps.sh
 chmod +x limelight1080p60fps.sh
-# chmod +x limelightReconfig.sh
+chmod +x limelightReconfig.sh
 
 
