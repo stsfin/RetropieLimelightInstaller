@@ -4,10 +4,12 @@ read -p "Press anykey to start Java8 install, input sudo credentials if asked `e
 
 sudo apt-get update && sudo apt-get install oracle-java8-jdk && sudo apt-get install input-utils
 
-# cp limelightReconfig.sh /home/pi/RetroPie/roms/ports/ 
-# install for limelight reconfig, will be enabled as soon the issues that emulation station causes are found and fixed
 
 mkdir /home/pi/limelight
+mkdir /home/pi/RetroPie/roms/limelight
+
+# cp limelightReconfig.sh /home/pi/RetroPie/roms/limelight/ 
+# install for limelight reconfig, will be enabled as soon the issues that emulation station causes are found and fixed
 
 cd /home/pi/limelight
 
@@ -55,9 +57,7 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art.png
 sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art_blur.png
 
-mkdir /home/pi/RetroPie/roms/limelight
 cd /home/pi/RetroPie/roms/limelight
-#cd /home/pi/RetroPie/roms/ports/
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
