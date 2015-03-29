@@ -14,6 +14,7 @@ chmod +x limelightRetroInstall.sh
 ./limelightRetroInstall.sh
 
 After the install reboot your RetroPie and start the wanted limelight from Emulation Stations main menu
+
 IP and keymap reconfig will also be available form this menu.
 
 If you have hotplugged your controller you should run the reconfig script to input the correct eventID after reboot
