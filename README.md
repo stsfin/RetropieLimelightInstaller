@@ -7,13 +7,16 @@ limelightRetroInstall.sh - script is used to install and configure limelight wit
 
 Howto use:
 
-just drop the limelightRetroInstall.sh in to your home directory
+just run limelightRetroInstall.sh from where you unpacked the installer zip
 
 chmod +x limelightRetroInstall.sh
 
 ./limelightRetroInstall.sh
 
-After the install reboot your RetroPie and start the wanted limelight from Emulations Stations main menu
+After the install reboot your RetroPie and start the wanted limelight from Emulation Stations main menu
+IP and keymap reconfig will also be available form this menu.
+
+If you have hotplugged your controller you should run the reconfig script to input the correct eventID after reboot
 
 <hr>
 
@@ -35,3 +38,5 @@ DISCLAIMER: Force_turbo will void your warranty since its keeps the clock on 100
 <hr>
 
 Special thanks to the Guys from the Possibly Unsafe -youtube channel whose lime light video tutorial sparked the idea to make the install a tad easier. You can follow them here: https://www.youtube.com/channel/UCyvRzvYxTv1Zz0x--GN_Z7w
+
+Also thanks to Ville, Matti and JoolsWillis for helping me to squash bugs.
