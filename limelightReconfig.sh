@@ -25,8 +25,8 @@ java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
 cd /home/pi/RetroPie/roms/limelight/
 
-read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
-  < /dev/tty
+read -p "Existing limelight start scripts made with this installer will be removed, and new created, press anykey to continue `echo $'\n> '`" -n1 -s  < /dev/tty
+
 rm limelight720p60fps.sh  2> /dev/null
 rm limelight1080p30fps.sh  2> /dev/null
 rm limelight1080p60fps.sh 2> /dev/null
