@@ -40,7 +40,12 @@ read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the gam
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
+#mkdir /home/pi/RetroPie/roms/limelight -upcomming feature
 cd /home/pi/RetroPie/roms/ports/
+
+#upcomming feature for installing limelight under own device menu
+#sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Limelight</fullname>\n<path>~/RetroPie/roms/limelight</path>\n<extension>.sh .SH</extension>\n<command>bash %ROM%</command>\n<platform>limelight</platform>\n<theme>limelight</theme>\n</system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
+
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
