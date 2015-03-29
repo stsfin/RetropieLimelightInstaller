@@ -23,7 +23,7 @@ read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the gam
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
-cd /home/pi/RetroPie/roms/ports/
+cd /home/pi/RetroPie/roms/limelight/
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
