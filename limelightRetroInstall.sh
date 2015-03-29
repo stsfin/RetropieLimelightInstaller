@@ -40,12 +40,24 @@ read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the gam
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
-#mkdir /home/pi/RetroPie/roms/limelight -upcomming feature
-cd /home/pi/RetroPie/roms/ports/
+
 
 #upcomming feature for installing limelight under own device menu
-#sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Limelight</fullname>\n<path>~/RetroPie/roms/limelight</path>\n<extension>.sh .SH</extension>\n<command>bash %ROM%</command>\n<platform>limelight</platform>\n<theme>limelight</theme>\n</system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
 
+read -p "Installing limelight menu to Emulation Station, press anykey to continue `echo $'\n> '`" -n1 -s
+sudo sed -i -e 's|</systemList>|<system>\n<name>limelight</name>\n<fullname>Limelight</fullname>\n<path>~/RetroPie/roms/limelight</path>\n<extension>.sh .SH</extension>\n<command>bash %ROM%</command>\n<platform>limelight</platform>\n<theme>limelight</theme>\n</system>\n</systemList>|g' /etc/emulationstation/es_systems.cfg
+sudo mkdir /etc/emulationstation/themes/simple/limelight
+sudo mkdir /etc/emulationstation/themes/simple/limelight/art/
+cd /etc/emulationstation/themes/simple/limelight
+sudo wget  https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/theme.xml
+cd /etc/emulationstation/themes/simple/limelight/art/
+sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight.png
+sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art.png
+sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download/1.3.1/limelight_art_blur.png
+
+mkdir /home/pi/RetroPie/roms/limelight
+cd /home/pi/RetroPie/roms/limelight
+#cd /home/pi/RetroPie/roms/ports/
 
 read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
 
@@ -67,3 +79,5 @@ chmod +x limelight720p60fps.sh
 chmod +x limelight1080p30fps.sh
 chmod +x limelight1080p60fps.sh
 # chmod +x limelightReconfig.sh
+
+
