@@ -15,7 +15,7 @@ chmod +x limelightRetroInstall.sh
 
 ./limelightRetroInstall.sh
 
-After the install reboot your RetroPie and start the wanted limelight form Emulations Stations -ports section
+After the install reboot your RetroPie and start the wanted limelight from Emulations Stations main menu
 
 <hr>
 
