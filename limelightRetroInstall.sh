@@ -13,7 +13,7 @@ mkdir /home/pi/RetroPie/roms/limelight
 
 #install reconfigure script to emulation station
 
-cp limelightReconfig.sh /home/pi/RetroPie/roms/limelight/ 
+cp limelightconfig.sh /home/pi/RetroPie/roms/limelight/ 
 
 #download limelight
 
