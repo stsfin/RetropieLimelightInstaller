@@ -60,8 +60,6 @@ read -p "(if the gamepad is missing, press CTRL+C and reboot the PI with the gam
 
 java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
-
-
 #Install limelight to Emulation Station as its own device menu
 
 read -p "Installing limelight menu to Emulation Station, press anykey to continue `echo $'\n> '`" -n1 -s
@@ -77,9 +75,7 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 
 cd /home/pi/RetroPie/roms/limelight
 
-
 read -p "Existing limelight will be updated, press anykey to continue `echo $'\n> '`" -n1 -s
-
 
 #Remove existing scripts if they exist & Create scripts for running limelight from emulation station
 
