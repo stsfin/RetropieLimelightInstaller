@@ -25,20 +25,15 @@ java -jar limelight.jar map -input /dev/input/event$USBID mapfile.map
 
 cd /home/pi/RetroPie/roms/limelight/
 
-read -p "Existing limelight start scripts made with this installer will be removed, and new created, press anykey to continue `echo $'\n> '`" -n1 -s  < /dev/tty
+read -p "Update limlight startupscripts, press anykey to continue `echo $'\n> '`" -n1 -s  < /dev/tty
 
-rm limelight720p60fps.sh  2> /dev/null
-rm limelight1080p30fps.sh  2> /dev/null
-rm limelight1080p60fps.sh 2> /dev/null
-
-
-echo "#!/bin/bash" >> limelight720p60fps.sh
+echo "#!/bin/bash" > limelight720p60fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
 
-echo "#!/bin/bash" >> limelight1080p30fps.sh
+echo "#!/bin/bash" > limelight1080p30fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p30fps.sh
 
-echo "#!/bin/bash" >> limelight1080p60fps.sh
+echo "#!/bin/bash" > limelight1080p60fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
 
 chmod +x limelight720p60fps.sh
