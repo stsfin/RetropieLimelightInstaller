@@ -19,9 +19,9 @@ cp limelightconfig.sh /home/pi/RetroPie/roms/limelight/
 
 cd /home/pi/limelight
 
-wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/libopus.so
+wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/libopus.so
 
-wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/limelight.jar
+wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.2/limelight.jar
 
 clear
 
