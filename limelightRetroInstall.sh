@@ -75,7 +75,7 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 
 cd /home/pi/RetroPie/roms/limelight
 
-read -p "Existing limelight will be updated, press anykey to continue `echo $'\n> '`" -n1 -s
+read -p "Limelight scripts will be created, press anykey to continue `echo $'\n> '`" -n1 -s
 
 #Remove existing scripts if they exist & Create scripts for running limelight from emulation station
 
@@ -95,4 +95,4 @@ chmod +x limelight1080p30fps.sh
 chmod +x limelight1080p60fps.sh
 chmod +x limelightconfig.sh
 
-
+echo -e "\nEverything done! Now reboot the Pi and you are all set \n"
