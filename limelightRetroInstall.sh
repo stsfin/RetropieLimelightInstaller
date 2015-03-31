@@ -77,23 +77,19 @@ sudo wget https://github.com/stsfin/RetropieLimelightInstaller/releases/download
 
 cd /home/pi/RetroPie/roms/limelight
 
-#Remove existing scripts if they exist
 
-read -p "Existing limelight start scripts made with this installer will be removed, and new ones created in their place, press anykey to continue `echo $'\n> '`" -n1 -s
+read -p "Existing limelight will be updated, press anykey to continue `echo $'\n> '`" -n1 -s
 
-rm limelight720p60fps.sh 2> /dev/null
-rm limelight1080p30fps.sh 2> /dev/null
-rm limelight1080p60fps.sh 2> /dev/null
 
-#Create scripts for running limelight from emulation station
+#Remove existing scripts if they exist & Create scripts for running limelight from emulation station
 
-echo "#!/bin/bash" >> limelight720p60fps.sh
+echo "#!/bin/bash" > limelight720p60fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight720p60fps.sh
 
-echo "#!/bin/bash" >> limelight1080p30fps.sh
+echo "#!/bin/bash" > limelight1080p30fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p30fps.sh
 
-echo "#!/bin/bash" >> limelight1080p60fps.sh
+echo "#!/bin/bash" > limelight1080p60fps.sh
 echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip" -app Steam -mapping mapfile.map" >>  limelight1080p60fps.sh
 
 #Chmod scripts to be runnable
@@ -101,6 +97,6 @@ echo "cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -60fps "$ip
 chmod +x limelight720p60fps.sh
 chmod +x limelight1080p30fps.sh
 chmod +x limelight1080p60fps.sh
-chmod +x limelightReconfig.sh
+chmod +x limelightconfig.sh
 
 
