@@ -27,6 +27,8 @@ If you have hotplugged your controller you should run the reconfig script to inp
 
 If you get pairing or connection errors to your host PC, the simplest solution is to reinstall Geforce experience, since these mostly happen when Geforce Experience stops working in the system tray/background
 
+If gamestreaming starts, steam is shown and you have run the reconfig script, and the controller still wont work, reboot your host pc, this will fix controller streaming via Geforce Experience
+
 <hr>
 
 About 1080p 60fps -streaming
