@@ -1,6 +1,12 @@
 # RetropieLimelightInstaller
 
+<hr>
+
 <b> THIS IS NOW A PART OF THE EXPERIMENTAL EMULATORS IN RETROPIE, PLEASE USE THAT INSTALLER </b>
+
+
+
+<hr>
 
 
 
