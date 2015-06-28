@@ -1,5 +1,9 @@
 # RetropieLimelightInstaller
 
+<b> THIS IS NOW A PART OF THE EXPERIMENTAL EMULATORS IN RETROPIE, PLEASE USE THAT INSTALLER </b>
+
+
+
 Just a quick bash script to automate the install of Limelight to Retropie with Emulation Station.
 
 
